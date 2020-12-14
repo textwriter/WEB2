@@ -1,0 +1,24 @@
+a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    border-bottom: solid gray 1px;
+    padding-bottom: 12px;
+    margin: 0;
+    padding: 15px;
+}
+ol{
+    border-right: solid gray 1px;
+    width:100px;
+    margin: 0;
+    padding: 20px;
+    padding-left: 33px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#art{
+    padding-left: 20px;
+}

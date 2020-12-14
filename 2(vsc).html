@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>My project</title>
+        <link rel="stylesheet" href="style(vsc).css"/>
+        <script>
+            function sde1(self){
+                var target= document.querySelector('body');
+                if(self.value==='night'){
+                    target.style.backgroundColor='black';
+                    target.style.color='white';
+                    self.value='day';
+
+                    var alist = document.querySelectorAll('a');
+                    i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color='powderblue'
+                    i = i+1
+                    }
+                } else{
+                    target.style.backgroundColor='white';
+                    target.style.color='black';
+                    self.value='night';
+
+                    var alist = document.querySelectorAll('a');
+                    i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color='blue'
+                    i = i+1
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1><a href="index(vsc).html">WEB2</a></h1>
+        <div id='grid'>
+            <ol>
+                <li><a href="My project(vsc).html">HTML</a></li>
+                <li><a href="2(vsc).html">CSS</a></li>
+                <li><a href="3(vsc).html">JavaScript</a></li>
+            </ol>
+        <div id='art'>
+            <h2>CSS</h2>
+                I decide to make My project
+            <p>
+            <img src="coding.jpg" width="250px">
+            </p>
+            <input type="button" value="night" onclick="
+                sde1(this);
+            ">
+        </div>
+    </div>
+    </body>
+</html>
